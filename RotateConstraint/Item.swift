@@ -92,7 +92,9 @@ class Item: UIView {
     }
     
     fileprivate func rotateNameLabel() {
-        nameLabel!.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+        nameLabel!.transform = CGAffineTransform(rotationAngle: (3 * CGFloat.pi) / 2)
+        nameLabel!.layer.anchorPoint.x = 1
+        nameLabel!.layer.anchorPoint.y = 0
     }
     
 
